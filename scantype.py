@@ -124,7 +124,7 @@ def main(argv=None):
     ap.add_argument("inputs", nargs="+")
     ap.add_argument("--out", required=True)
     ap.add_argument("--fields", action="store_true")
-    # GUESS, uncalibrated (constraint ledger, INVENTED THRESHOLDS). On the planted scans, rapidocr 3.10: correct lines 0.97 to 1.00,
+    # a guess, not calibrated. On the planted scans, rapidocr 3.10: correct lines 0.97 to 1.00,
     # wrong lines 0.657, 0.863 and 0.923. The wrong line at 0.923 passes it, so the three reading agreement is the real check.
     ap.add_argument("--min-conf", type=float, default=0.90)
     a = ap.parse_args(argv)
