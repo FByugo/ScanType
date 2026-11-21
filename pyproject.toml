@@ -1,0 +1,6 @@
+[project]
+name = "scantype"
+version = "0.1.0"
+description = "Type out scanned pages and photos of printed text, read each page three ways, and mark every line the readings disagree on."
+requires-python = ">=3.10"
+dependencies = ["rapidocr>=3", "onnxruntime", "pymupdf>=1.24", "opencv-python"]
